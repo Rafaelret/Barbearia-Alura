@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.cabeçalho-container {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container li {
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 10px;
+
+}
+
+.nav-container a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/*                       MAIN                                      */
+.container-list {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container-list li {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.container-list li:hover {
+    border-color: #c78c19;
+}
+
+.container-list li:hover h2 {
+    font-size: 40px;
+}
+
+
+.container-list li:active {
+    border-color: green;
+}
+
+
+.container-list h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descrição-produto {
+    font-size: 18px;
+}
+
+.preço-produto {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/*                  FOOTER                              */
+
+.rodape-container {
+    background-color: #000000;
+}
+
+
+.container-footer {
+    text-align: center;
+    padding: 40px
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width:480px) {
+    .main-container {
+        padding: 0 30px;
+    }
+
+    .container {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .nav-container li {
+        margin: 0 auto;
+    }
+
+    .container-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .nav-container ul {
+        display: flex;
+        width: auto;
+         
+    }
+    .nav-container a {
+        font-size: 16px;
+    }
+    
+    img {
+        width: 100%;
+    }
+}
