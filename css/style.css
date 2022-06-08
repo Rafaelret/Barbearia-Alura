@@ -133,4 +133,8 @@ body {
     img {
         width: 100%;
     }
+
+    .container-list li:hover #cabelos {
+        font-size: 30px;
+    }
 }
